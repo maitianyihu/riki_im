@@ -19,7 +19,7 @@ public class OtherMessageNode : AbstractMessageNode{
             e = elem as! TIMGroupSystemElem;
             print(e.type);
             if(e.type == TIM_GROUP_SYSTEM_TYPE.DELETE_GROUP_TYPE){
-                entity.params = "{\"subtype\":\"TIM_GROUP_SYSTEM_TYPE.DELETE_GROUP_TYPE\"}";
+                entity.params = "{\"subtype\":\"TIM_GROUP_SYSTEM_TYPE_DELETE_GROUP_TYPE\"}";
                 entity.type = "GroupSystem";
             }else{
                 entity.params = "{\"note\":\"IOS暂不支持该节点!\"}";
